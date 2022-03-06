@@ -11,7 +11,8 @@ import time
 
 import logging
 
-from config import TOKEN, log_terminal
+#from config import TOKEN, log_terminal
+import os
 from doc import *
 from schedule_class import *
 from display_schedule_class import *
@@ -23,7 +24,10 @@ users_events = dict()
 
 NAME_EVENT, DATE_EVENT, TIME_EVENT, LINK_EVENT, COMMENT_EVENT = range(5)
 
+TOKEN = os.environ['TOKEN']
 updater = Updater(TOKEN, use_context=True)
+
+
 dp = updater.dispatcher
 jp = updater.job_queue
 
