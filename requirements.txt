@@ -2,3 +2,4 @@ telebot==0.0.4
 schedule~=1.1.0
 jdatetime~=3.8.2
 pytelegrambotapi == 4.4.0
+python-telegram-bot==12.7
