@@ -223,7 +223,7 @@ def main():
     #                               pass_args=True,
     #                               pass_job_queue=True,11
     #                               pass_chat_data=True))
-    jp.run_daily(today_callback_alarm, time=datetime.time(8,33), context=None, name="today", job_kwargs=None)
+    #jp.run_daily(today_callback_alarm, time=datetime.time(8,33), context=None, name="today", job_kwargs=None)
     updater.start_polling()
     logging.info("Start bot")
     #schedule.every().day.at("11:42").do(set_timer)
